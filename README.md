@@ -2,7 +2,7 @@ code_craft
 
 ## Проект Django: code_craft_education
 
-Образовательная платформа для Backend разработчиков: <CODECRAFT>
+Образовательная платформа для Backend разработчиков: CODECRAFT
 
 ## Технологии:
 
