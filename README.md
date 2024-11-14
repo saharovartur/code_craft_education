@@ -7,7 +7,7 @@ code_craft
 ## Технологии:
 
 Backend: Django: 4.1;
-Python: 3.9; 
+Python: 3.9; UnitTest
 База данных: MySQL.
 Frontend: HTML/CSS.
 
