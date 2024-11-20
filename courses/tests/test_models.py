@@ -46,7 +46,7 @@ class TestModuleModel(TestCase):
         self.assertIsInstance(self.module, Module)
 
     def test_str_representation(self):
-        self.assertEquals(str(self.module), 'IT')
+        self.assertEquals(str(self.module), '0. IT')
 
 
 
