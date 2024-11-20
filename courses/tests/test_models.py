@@ -33,6 +33,7 @@ class TestCourseModel(TestCase):
 
 
 class TestModuleModel(TestCase):
+    """Тесты для модели Module"""
     def setUp(self):
         user = User.objects.create_user(username='name', email='email@email.com', password='Pass2345')
         subject = Subject.objects.create(title='Test sub', slug='title-sub')
@@ -46,4 +47,11 @@ class TestModuleModel(TestCase):
 
     def test_str_representation(self):
         self.assertEquals(str(self.module), 'IT')
+
+
+
+
+
+
+
 
