@@ -4,7 +4,7 @@ from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.db.models import Count
 from django.forms import modelform_factory
 from django.shortcuts import get_object_or_404, redirect
-from django.views.generic import ListView, CreateView, UpdateView, DeleteView
+from django.views.generic import ListView, CreateView, UpdateView, DeleteView, DetailView
 from django.views.generic.base import TemplateResponseMixin, View
 
 from courses.forms import ModuleFormSet
@@ -170,3 +170,9 @@ class CourseListView(TemplateResponseMixin, View):
         return self.render_to_response({'subjects': subjects,
                                         'subject': subject,
                                         'courses': courses})
+
+
+class CourseDetailView(DetailView):
+    """Вью детальной инфо о курсе"""
+    model = Course
+    template_name = 'course/detail.html'
