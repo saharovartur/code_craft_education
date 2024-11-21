@@ -157,7 +157,7 @@ class ContentOrderView(CsrfExemptMixin, JsonRequestResponseMixin, View):
 class CourseListView(TemplateResponseMixin, View):
     """Вью списка курсов по предмету для учеников"""
     model = Course
-    template_name = 'course/list.html'
+    template_name = 'course/list_student.html'
 
     def get(self, request, subject=None):
         subjects = Subject.objects.annotate(total_courses=Count('courses'))  # Подсчет кол-ва курсов
