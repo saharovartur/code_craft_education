@@ -12,9 +12,10 @@
       <ul class="menu">
         {% if request.user.is_authenticated %}
         {{ user.username }}
-          <li><a href="{% url "logout" %}">Выйти</a></li>
+          <li><a href="{% url 'logout' %}">Выйти</a></li>
         {% else %}
-          <li><a href="{% url "login" %}">Войти</a></li>
+          <li><a href="{% url 'login' %}">Войти</a></li>
+          <a href="{% url 'student_registration' %}">Регистрация</a>
         {% endif %}
       </ul>
     </div>
