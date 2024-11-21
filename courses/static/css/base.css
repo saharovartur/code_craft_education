@@ -225,7 +225,7 @@ ul#course-modules li:hover {
 #module-contents div {
     padding:10px 20px;
     border:1px solid #ccc;
-    background:black
+    background:#DCDCDC
 }
 
 #module-contents div.placeholder {
@@ -238,7 +238,7 @@ ul#course-modules li:hover {
 }
 
 #module-contents input[type=submit] {
-    color:black;
+    color:white;
     background:none;
     margin:-20px 0 0;
     padding:0;
