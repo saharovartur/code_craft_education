@@ -11,25 +11,29 @@ from courses.services.mixins import OwnerCourseMixin, OwnerCourseEditMixin
 
 
 class ManageCourseListView(PermissionRequiredMixin, OwnerCourseMixin, ListView):
+    """Вью списка курсов"""
     template_name = 'course/list.html'
     permission_required = 'courses.view_course'
 
 
 class CourseCreateView(PermissionRequiredMixin, OwnerCourseEditMixin, CreateView):
+    """Вью создания курса"""
     permission_required = 'courses.add_course'
 
 
 class CourseUpdateView(PermissionRequiredMixin, OwnerCourseEditMixin, UpdateView):
+    """Вью обновления курса"""
     permission_required = 'courses.change_course'
 
 
 class CourseDeleteView(PermissionRequiredMixin, OwnerCourseMixin, DeleteView):
+    """Вью удаления курса"""
     template_name = 'course/delete.html'
     permission_required = 'courses.delete_course'
 
 
 class CourseModuleUpdateView(TemplateResponseMixin, View):
-    """Обработка набора форм модулей курса"""
+    """Обработка набора форм  модуля курса"""
     template_name = 'module/formset.html'
     course = None
 
@@ -110,7 +114,7 @@ class ContentCreateUpdateView(TemplateResponseMixin, View):
 
 
 class ContentDeleteView(View):
-    """"""
+    """Вью удаления контента"""
     def post(self, request, id):
         content = get_object_or_404(Content,
                                     id=id,
@@ -122,6 +126,7 @@ class ContentDeleteView(View):
 
 
 class ModuleContentListView(TemplateResponseMixin, View):
+    """Вью списка модулей курса"""
     template_name = 'module/content_list.html'
 
     def get(self, request, module_id):
