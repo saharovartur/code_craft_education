@@ -21,6 +21,7 @@ Frontend: HTML/CSS.
 
 ## Скрины проекта
 1. ![img.png](img.png)
+2. Модули: ![img_1.png](img_1.png)
    
 
 
