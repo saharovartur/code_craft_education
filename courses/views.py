@@ -10,6 +10,7 @@ from django.views.generic.base import TemplateResponseMixin, View
 from courses.forms import ModuleFormSet
 from courses.models import Course, Module, Content, Subject
 from courses.services.mixins import OwnerCourseMixin, OwnerCourseEditMixin
+from students.forms import CourseEnrollForm
 
 
 class ManageCourseListView(PermissionRequiredMixin, OwnerCourseMixin, ListView):
@@ -176,3 +177,8 @@ class CourseDetailView(DetailView):
     """Вью детальной инфо о курсе"""
     model = Course
     template_name = 'course/detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['enroll_form'] = CourseEnrollForm(initial={'course': self.object})
+        return context
