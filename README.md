@@ -6,10 +6,11 @@ code_craft
 
 ## Технологии:
 
-Backend: Django: 4.1;
-Python: 3.9; UnitTest
-База данных: MySQL.
-Frontend: HTML/CSS.
+1. Python: 3.9;
+2. Django: 4.1;
+3. UnitTest
+4. MySQL.
+5. HTML / CSS / JS
 
 
 ## Описание функциональности
@@ -23,7 +24,7 @@ Frontend: HTML/CSS.
 
 
 ## Скрины проекта
-1. ![img.png](img.png)
+1. Курс: ![img.png](img.png)
 2. Модули: ![img_1.png](img_1.png)
    
 
