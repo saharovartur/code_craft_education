@@ -23,6 +23,7 @@ class StudentRegistrationView(CreateView):
 
 
 class StudentEnrollCourseView(LoginRequiredMixin, FormView):
+    """Запись студентов на курс"""
     course = None
     form_class = CourseEnrollForm
 
