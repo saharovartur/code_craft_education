@@ -32,12 +32,12 @@ code_craft
 
 ## Установка
 
-1.Клонируйте репозиторий;
-2.Перейдите в директорию проекта;
-3.Установки зависимости: pip install -r requirements.txt ;
-4.Настройте базу данных в файле settings.py ;
-5.Выполните миграции: py manage.py makemigrations > python manage.py migrate ;
-6.Запустите сервер: py manage.py runserver .
+1. Клонируйте репозиторий;
+2. Перейдите в директорию проекта;
+3. Установки зависимости: pip install -r requirements.txt ;
+4. Настройте базу данных в файле settings.py ;
+5. Выполните миграции: py manage.py makemigrations > python manage.py migrate ;
+6. Запустите сервер: py manage.py runserver .
 
 ## Настройка окружения
 
