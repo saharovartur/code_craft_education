@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'redisboard',
     'rest_framework',
+    'chat',
 
 
 ]
