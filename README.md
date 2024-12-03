@@ -8,9 +8,10 @@ code_craft
 
 1. Python: 3.9;
 2. Django: 4.1;
-3. UnitTest
-4. MySQL.
-5. HTML / CSS / JS
+3. Django Channels
+4. UnitTest
+5. MySQL.
+6. HTML / CSS / JS
 
 
 ## Описание функциональности
