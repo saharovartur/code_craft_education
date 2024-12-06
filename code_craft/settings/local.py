@@ -1,4 +1,4 @@
-from code_craft.settings.base import *
+from .base import *
 
 DEBUG = True
 
