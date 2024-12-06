@@ -21,7 +21,7 @@ server {
     listen               443 ssl;
     ssl_certificate      /code/code_craft/ssl/code_craft.crt;
     ssl_certificate_key  /code/code_craft/ssl/code_craft.key;
-    server_name  www.codecraft.com codecraft.com;
+    server_name  *.codecraft.com codecraft.com;
     error_log    stderr warn;
     access_log   /dev/stdout main;
 
