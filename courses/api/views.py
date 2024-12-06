@@ -47,13 +47,3 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet):
 
 
 
-## Первоначальная версия кода записи на курс
-# class CourseEnrollView(APIView):
-#     """Запись на курс"""
-#     authentication_classes = [BasicAuthentication]
-#     permission_classes = [IsAuthenticated]
-#
-#     def post(self, request, pk, format=None):
-#         course = get_object_or_404(Course, pk=pk)
-#         course.students.add(request.user)
-#         return Response({'enrolled': True})
