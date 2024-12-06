@@ -7,11 +7,14 @@ code_craft
 ## Технологии:
 
 1. Python: 3.9;
-2. Django: 4.1;
+2. Django: 4.2.16;
 3. Django Channels
 4. UnitTest
-5. MySQL.
+5. MySQL
 6. HTML / CSS / JS
+7. NGINX
+8. UWSGI
+9. Daphne
 
 
 ## Описание функциональности
