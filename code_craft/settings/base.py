@@ -168,3 +168,5 @@ CHANNEL_LAYERS = {
 }
 
 STATIC_ROOT = BASE_DIR / 'static'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
